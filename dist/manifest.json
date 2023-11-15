@@ -1,0 +1,39 @@
+{
+    "name": "handlebars-demo-extention",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "",
+    "content_scripts": [
+        {
+            "matches": ["https://developer.mozilla.org/*"],
+            "js": ["content_scripts.js"],
+            "css": []
+        }
+    ],
+    "icons": {},
+    "permissions": [],
+    "host_permissions": [ ],
+    "action": {
+        "default_icon": {},
+        "default_title": "Ext title"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "*.jpg",
+                "*.png",
+                "*.gif",
+                "*.json",
+                "*.eot",
+                "*.woff",
+                "*.woff2",
+                "*.ttf",
+                "*.js"
+            ],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "author": {
+        "email": "yamatai19981212@gmail.com"
+    }
+}
